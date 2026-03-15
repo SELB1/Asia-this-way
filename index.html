@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asia This Way - Travel agency</title>
+  <meta name="description"
+    content="Asia This Way creates refined group journeys across Asia with curated hotels, elegant pacing, and seamless travel planning.">
+  <title>Asia This Way | Signature Asia Journeys</title>
 
   <!-- 
     - favicon
@@ -23,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 </head>
 
@@ -40,29 +42,41 @@
     <div class="header-top">
       <div class="container">
 
-        <a href="tel:+01123456790" class="helpline-box">
+        <a href="tel:+212610108241" class="helpline-box">
 
           <div class="icon-box">
             <ion-icon name="call-outline"></ion-icon>
           </div>
 
           <div class="wrapper">
-            <p class="helpline-title">For Further Inquires :</p>
+            <p class="helpline-title">Private Travel Desk</p>
 
-            <p class="helpline-number">+212 610108241</p>
+            <p class="helpline-number">+212 618672017</p>
+            <p class="helpline-number">+66 946313118</p>
           </div>
 
         </a>
 
-        <a href="#" class="logo">
-          <img src="assets/images/remove-photos-background-removed.png" alt="Tourly logo">
+        <a href="#home" class="logo">
+          <img src="assets/images/remove-photos-background-removed.png" alt="Asia This Way logo">
         </a>
 
         <div class="header-btn-group">
 
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
-          </button>
+          <div class="site-controls">
+            <label class="sr-only" for="languageSwitcher">Language</label>
+
+            <select id="languageSwitcher" class="lang-switcher" data-language-switcher aria-label="Language selector">
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="ar">AR</option>
+            </select>
+
+            <button class="theme-toggle-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+              <ion-icon name="moon-outline" data-theme-icon></ion-icon>
+              <span data-theme-text>Dark mode</span>
+            </button>
+          </div>
 
           <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
             <ion-icon name="menu-outline"></ion-icon>
@@ -86,13 +100,13 @@
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
+              <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
 
@@ -102,8 +116,8 @@
 
           <div class="navbar-top">
 
-            <a href="#" class="logo">
-              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            <a href="#home" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Asia This Way logo">
             </a>
 
             <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -119,7 +133,7 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link" data-nav-link>about us</a>
+              <a href="#about" class="navbar-link" data-nav-link>about us</a>
             </li>
 
             <li>
@@ -142,7 +156,7 @@
 
         </nav>
 
-        <button class="btn btn-primary">Book Now</button>
+        <a href="#package" class="btn btn-primary">Book Now</a>
 
       </div>
     </div>
@@ -161,20 +175,111 @@
       -->
 
       <section class="hero" id="home">
-        <div class="container">
+        <div class="container hero-grid">
 
-          <h2 class="h1 hero-title">Journey to explore ASIA</h2>
+          <div class="hero-content" data-reveal>
+            <p class="hero-kicker">Signature Group Journeys Across Asia</p>
 
-          <p class="hero-text">
-            BOOK YOUR EXPERIENCE IN ASIA
-            ACTIVITIES & HOTELS & TOURS
-          </p>
+            <h1 class="h1 hero-title">Travel Asia with quiet luxury and curated rhythm.</h1>
 
-          <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
+            <p class="hero-text">
+              Asia This Way blends refined hotels, effortless logistics, and immersive moments into elegant departures
+              for travellers who value comfort and beauty.
+            </p>
 
-            <button class="btn btn-secondary">Book now</button>
+            <div class="btn-group">
+              <a href="#package" class="btn btn-primary">Explore Packages</a>
+
+              <a href="#contact" class="btn btn-secondary">Speak With Us</a>
+            </div>
           </div>
+
+          <aside class="hero-panel" data-reveal>
+            <p class="hero-panel-label">Why travellers choose us</p>
+
+            <h2 class="hero-panel-title">Thoughtful itineraries with a boutique feel.</h2>
+
+            <ul class="hero-highlights">
+
+              <li>
+                <p class="hero-highlight-title">Handpicked stays</p>
+
+                <p class="hero-highlight-text">
+                  Resorts, city escapes, and scenic retreats chosen for atmosphere and comfort.
+                </p>
+              </li>
+
+              <li>
+                <p class="hero-highlight-title">Elegant pacing</p>
+
+                <p class="hero-highlight-text">
+                  Balanced itineraries with highlights and enough time to slow down.
+                </p>
+              </li>
+
+              <li>
+                <p class="hero-highlight-title">Seamless guidance</p>
+
+                <p class="hero-highlight-text">
+                  Direct support from first inquiry to final departure.
+                </p>
+              </li>
+
+            </ul>
+
+            <div class="hero-stats">
+              <div>
+                <strong>08</strong>
+                <span>2026 tours</span>
+              </div>
+
+              <div>
+                <strong>Small</strong>
+                <span>small groups</span>
+              </div>
+
+              <div>
+                <strong>Curated</strong>
+                <span>curated stays</span>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </section>
+
+      <section class="signature-strip" id="about" aria-label="About Asia This Way">
+        <div class="container signature-grid">
+
+          <article class="signature-card" data-reveal>
+            <p class="signature-number">01</p>
+
+            <h3 class="h3 signature-title">Concierge-level planning</h3>
+
+            <p class="signature-text">
+              Every departure is shaped for comfort, clear logistics, and a polished end-to-end experience.
+            </p>
+          </article>
+
+          <article class="signature-card" data-reveal>
+            <p class="signature-number">02</p>
+
+            <h3 class="h3 signature-title">Boutique travel tone</h3>
+
+            <p class="signature-text">
+              We combine iconic destinations with hotels, scenery, and moments that feel visually memorable.
+            </p>
+          </article>
+
+          <article class="signature-card" data-reveal>
+            <p class="signature-number">03</p>
+
+            <h3 class="h3 signature-title">Designed for ease</h3>
+
+            <p class="signature-text">
+              Travellers enjoy group energy without sacrificing rhythm, space, or a sense of refinement.
+            </p>
+          </article>
 
         </div>
       </section>
@@ -188,112 +293,142 @@
       -->
 
       <section class="popular" id="destination">
-  <div class="container">
+        <div class="container">
 
-    <p class="section-subtitle">Uncover place</p>
-    <h2 class="h2 section-title">Destinations</h2>
-    <p class="section-text">
-      Most popular destinations with Asia This Way
-    </p>
+          <div class="section-heading" data-reveal>
+            <p class="section-subtitle">Destinations</p>
 
-    <ul class="popular-list">
+            <h2 class="h2 section-title">Places chosen for atmosphere, beauty, and ease.</h2>
 
-      <!-- ALWAYS VISIBLE (FIRST 3) -->
-
-      <li>
-        <div class="popular-card">
-          <figure class="card-img">
-            <img src="assets/images/Thailand.png" loading="lazy">
-          </figure>
-          <div class="card-content">
-            <p class="card-subtitle"><a href="#">Thailand</a></p>
-            <p class="card-text">Beaches, culture & nightlife.</p>
+            <p class="section-text">
+              From island stillness to cosmopolitan nights, every stop is selected to feel elevated from arrival to
+              return.
+            </p>
           </div>
+
+          <ul class="popular-list">
+
+            <li data-reveal>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/Thailand.png" alt="Luxury travel destination in Thailand" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-tag">Golden escape</p>
+
+                  <p class="card-subtitle"><a href="#">Thailand</a></p>
+
+                  <p class="card-text">Temple grandeur, rooftop glamour, and island indulgence in one destination.</p>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/Malaysia.png" alt="Luxury travel destination in Malaysia" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-tag">Modern calm</p>
+
+                  <p class="card-subtitle"><a href="#">Malaysia</a></p>
+
+                  <p class="card-text">Polished city breaks, rich culture, and nature-driven retreats with ease.</p>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/Maldives.png" alt="Luxury travel destination in the Maldives" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-tag">Island luxury</p>
+
+                  <p class="card-subtitle"><a href="#">Maldives</a></p>
+
+                  <p class="card-text">Overwater privacy, luminous lagoons, and a sense of total escape.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="section-action" data-reveal>
+              <button id="viewAllDestBtn" class="btn btn-primary" aria-expanded="false">More Destinations</button>
+            </li>
+
+            <li class="extra-dest expandable-item">
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/Philippines.png" alt="Luxury travel destination in the Philippines"
+                    loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-tag">Tropical discovery</p>
+
+                  <p class="card-subtitle"><a href="#">Philippines</a></p>
+
+                  <p class="card-text">Secluded beaches, island-hopping, and dramatic coastal scenery.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="extra-dest expandable-item">
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/Hong kong.png" alt="Luxury travel destination in Hong Kong" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-tag">Urban glamour</p>
+
+                  <p class="card-subtitle"><a href="#">Hong Kong</a></p>
+
+                  <p class="card-text">Skyline drama, design-led stays, and one of Asia's sharpest city rhythms.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="extra-dest expandable-item">
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/Sri Lanka.png" alt="Luxury travel destination in Sri Lanka" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-tag">Heritage coast</p>
+
+                  <p class="card-subtitle"><a href="#">Sri Lanka</a></p>
+
+                  <p class="card-text">Tea country, ocean light, and cultural depth wrapped in warm hospitality.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="extra-dest expandable-item">
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/Vietnam.png" alt="Luxury travel destination in Vietnam" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-tag">Lantern nights</p>
+
+                  <p class="card-subtitle"><a href="#">Vietnam</a></p>
+
+                  <p class="card-text">Refined cuisine, coastal elegance, and cities filled with contrast and charm.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-      </li>
-
-      <li>
-        <div class="popular-card">
-          <figure class="card-img">
-            <img src="assets/images/Malaysia.png" loading="lazy">
-          </figure>
-          <div class="card-content">
-            <p class="card-subtitle"><a href="#">Malaysia</a></p>
-            <p class="card-text">Modern cities & rich culture.</p>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="popular-card">
-          <figure class="card-img">
-            <img src="assets/images/Maldives.png" loading="lazy">
-          </figure>
-          <div class="card-content">
-            <p class="card-subtitle"><a href="#">Maldives</a></p>
-            <p class="card-text">Luxury islands & clear waters.</p>
-          </div>
-        </div>
-      </li>
-
-      <!-- BUTTON -->
-
-      <li style="grid-column:1/-1; text-align:center;">
-        <button id="viewAllDestBtn" class="btn btn-primary">
-          More Destinations
-        </button>
-      </li>
-
-      <!-- HIDDEN DESTINATIONS -->
-
-      <li class="extra-dest" style="display:none;">
-        <div class="popular-card">
-          <figure class="card-img">
-            <img src="assets/images/Philippines.png">
-          </figure>
-          <div class="card-content">
-            <p class="card-subtitle">Philippines</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="extra-dest" style="display:none;">
-        <div class="popular-card">
-          <figure class="card-img">
-            <img src="assets/images/Hong Kong.png">
-          </figure>
-          <div class="card-content">
-            <p class="card-subtitle">Hong Kong</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="extra-dest" style="display:none;">
-        <div class="popular-card">
-          <figure class="card-img">
-            <img src="assets/images/Sri Lanka.png">
-          </figure>
-          <div class="card-content">
-            <p class="card-subtitle">Sri Lanka</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="extra-dest" style="display:none;">
-        <div class="popular-card">
-          <figure class="card-img">
-            <img src="assets/images/Vietnam.png">
-          </figure>
-          <div class="card-content">
-            <p class="card-subtitle">Vietnam</p>
-          </div>
-        </div>
-      </li>
-
-    </ul>
-
-  </div>
-</section>
+      </section>
 
 
 
@@ -304,431 +439,453 @@
         - #PACKAGE
       -->
 
-    <section class="package" id="package">
+      <section class="package" id="package">
         <div class="container">
 
-          <p class="section-subtitle">Our Group Tours</p>
+          <div class="section-heading" data-reveal>
+            <p class="section-subtitle">Departure Calendar</p>
 
-          <h2 class="h2 section-title">Asia This Way Packages</h2>
+            <h2 class="h2 section-title">Signature group tours with premium pacing.</h2>
 
-          <p class="section-text">
-            Carefully designed group tours across Asia with fixed dates and unique itineraries.
-          </p>
+            <p class="section-text">
+              Our 2026 departures are designed for travellers who want structure without feeling rushed, with curated
+              stays, smooth logistics, and a refined group atmosphere.
+            </p>
+          </div>
 
           <ul class="package-list">
-            <!-- G0 -->
-            <li>
+
+            <li data-reveal>
+              <div class="package-card featured-package">
+
+                <figure class="card-banner">
+                  <img src="assets/images/maldives_srilanka.png" alt="Group G0 Maldives and Sri Lanka tour"
+                    loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="package-card-label">Featured departure</p>
+
+                  <h3 class="h3 card-title">Group G0 · Maldives · Sri Lanka</h3>
+
+                  <p class="card-text">
+                    A tropical escape balancing overwater serenity in the Maldives with cultural texture in Sri Lanka.
+                    <br><strong>30 Apr – 10 May 2026</strong>
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">11D / 10N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Maldives · Sri Lanka</p>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <p class="price-note">Spring 2026</p>
+
+                  <p class="price">Limited seats</p>
+
+                  <a href="g0.html" class="btn btn-secondary">View Itinerary</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="section-action" data-reveal>
+              <button id="viewAllBtn" class="btn btn-primary" aria-expanded="false">View All Departures</button>
+            </li>
+
+            <li class="extra-package expandable-item">
               <div class="package-card">
 
-              <figure class="card-banner">
-      <img src="assets\images\maldives_srilanka.png"
-           alt="Group G0 Maldives Sri Lanka Tour"
-           loading="lazy">
-      </figure>
+                <figure class="card-banner">
+                  <img src="assets/images/Vietnam.png" alt="Group G1 Hanoi Da Nang Bangkok tour" loading="lazy">
+                </figure>
 
-    <div class="card-content">
-      <h3 class="h3 card-title">Group G0 – Maldives · Sri Lanka</h3>
+                <div class="card-content">
+                  <p class="package-card-label">Summer departure</p>
 
-      <p class="card-text">
-        A tropical escape combining Maldives beaches and Sri Lanka culture.
-        <br><strong>30 Apr – 10 May 2026</strong>
-      </p>
+                  <h3 class="h3 card-title">Group G1 · Hanoi · Da Nang · Bangkok</h3>
 
-      <ul class="card-meta-list">
+                  <p class="card-text">
+                    Vietnam and Thailand brought together through culture, coastlines, and iconic city moments.
+                    <br><strong>19 June – 03 July 2026</strong>
+                  </p>
 
-        <li class="card-meta-item">
-          <div class="meta-box">
-            <ion-icon name="time"></ion-icon>
-            <p class="text">11D / 10N</p>
-          </div>
-        </li>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">14D / 13N</p>
+                      </div>
+                    </li>
 
-        <li class="card-meta-item">
-          <div class="meta-box">
-            <ion-icon name="people"></ion-icon>
-            <p class="text">Group tour</p>
-          </div>
-        </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
 
-        <li class="card-meta-item">
-          <div class="meta-box">
-            <ion-icon name="location"></ion-icon>
-            <p class="text">Maldives · Sri Lanka</p>
-          </div>
-        </li>
-
-      </ul>
-    </div>
-
-    <div class="card-price">
-      <p class="price">Limited seats</p>
-
-      <a href="g0.html" class="btn btn-secondary">
-        More Info
-      </a>
-    </div>
-
-  </div>
-</li>
-
-      <li style="grid-column:1/-1; text-align:center;">
-        <button id="viewAllBtn" class="btn btn-primary">
-          View All Packages
-        </button>
-      </li>
-
-      <li class="extra-package" style="display:none;">
-      <!-- G1 -->
-        <div class="package-card">
-
-          <figure class="card-banner">
-            <img src="assets/images/g1-hanoi-danang-bangkok.png"
-                 alt="Group G1 Hanoi Da Nang Bangkok Asia Tour"
-                 loading="lazy">
-          </figure>
-
-          <div class="card-content">
-            <h3 class="h3 card-title">Group G1 – Hanoi · Da Nang · Bangkok</h3>
-
-            <p class="card-text">
-              Vietnam and Thailand group tour combining culture, cities, and iconic landmarks.
-              <br><strong>19 June – 03 July 2026</strong>
-            </p>
-
-            <ul class="card-meta-list">
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="time"></ion-icon>
-                  <p class="text">14D / 13N</p>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Vietnam · Thailand</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </li>
 
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="people"></ion-icon>
-                  <p class="text">Group tour</p>
+                <div class="card-price">
+                  <p class="price-note">Summer 2026</p>
+
+                  <p class="price">Coming soon</p>
+
+                  <a href="#contact" class="btn btn-secondary">Request Details</a>
                 </div>
-              </li>
 
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="location"></ion-icon>
-                  <p class="text">Vietnam · Thailand</p>
+              </div>
+            </li>
+
+            <li class="extra-package expandable-item">
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/Hong kong.png" alt="Group G2 Hong Kong Da Nang Hanoi tour" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="package-card-label">Summer departure</p>
+
+                  <h3 class="h3 card-title">Group G2 · Hong Kong · Da Nang · Hanoi</h3>
+
+                  <p class="card-text">
+                    A dynamic route that blends Hong Kong energy with Vietnam's cultural highlights and coastal rhythm.
+                    <br><strong>03 July – 17 July 2026</strong>
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">15D / 14N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Hong Kong · Vietnam</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-            </ul>
-          </div>
 
-          <div class="card-price">
-            <p class="price">Coming soon </span></p>
-            <button class="btn btn-secondary">Inquire for info</button>
-          </div>
+                <div class="card-price">
+                  <p class="price-note">Summer 2026</p>
+
+                  <p class="price">Coming soon</p>
+
+                  <a href="#contact" class="btn btn-secondary">Request Details</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="extra-package expandable-item">
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/Malaysia.png" alt="Group G3 Kuala Lumpur Maldives Sri Lanka tour"
+                    loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="package-card-label">Summer departure</p>
+
+                  <h3 class="h3 card-title">Group G3 · Kuala Lumpur · Maldives · Sri Lanka</h3>
+
+                  <p class="card-text">
+                    A diverse itinerary blending modern cities, tropical islands, and heritage-rich experiences.
+                    <br><strong>17 July – 30 July 2026</strong>
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">14D / 13N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Malaysia · Maldives · Sri Lanka</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <p class="price-note">Late July 2026</p>
+
+                  <p class="price">Coming soon</p>
+
+                  <a href="#contact" class="btn btn-secondary">Request Details</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="extra-package expandable-item">
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/Thailand.png" alt="Group G4 Bangkok Da Nang Hanoi tour" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="package-card-label">August departure</p>
+
+                  <h3 class="h3 card-title">Group G4 · Bangkok · Da Nang · Hanoi</h3>
+
+                  <p class="card-text">
+                    A classic Southeast Asia itinerary with temple culture, city energy, and shoreline downtime.
+                    <br><strong>01 August – 14 August 2026</strong>
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">14D / 13N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Thailand · Vietnam</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <p class="price-note">August 2026</p>
+
+                  <p class="price">Coming soon</p>
+
+                  <a href="#contact" class="btn btn-secondary">Request Details</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="extra-package expandable-item">
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/Phuket-honeymoon.png" alt="Group G5 Kuala Lumpur Bali Phuket tour"
+                    loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="package-card-label">Island departure</p>
+
+                  <h3 class="h3 card-title">Group G5 · Kuala Lumpur · Bali · Phuket</h3>
+
+                  <p class="card-text">
+                    An island-focused departure featuring Malaysia, Indonesia, and Thailand through a resort-led lens.
+                    <br><strong>08 August – 22 August 2026</strong>
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">15D / 14N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Malaysia · Indonesia · Thailand</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <p class="price-note">August 2026</p>
+
+                  <p class="price">Coming soon</p>
+
+                  <a href="#contact" class="btn btn-secondary">Request Details</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="extra-package expandable-item">
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/mejores-cosas-que-ver-vietnam-scaled.jpeg"
+                    alt="Group G6 Bangkok Da Nang Hanoi tour" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="package-card-label">August departure</p>
+
+                  <h3 class="h3 card-title">Group G6 · Bangkok · Da Nang · Hanoi</h3>
+
+                  <p class="card-text">
+                    A well-balanced route combining city energy, cultural stops, and lighter moments by the coast.
+                    <br><strong>15 August – 29 August 2026</strong>
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">15D / 14N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Thailand · Vietnam</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <p class="price-note">Late August 2026</p>
+
+                  <p class="price">Coming soon</p>
+
+                  <a href="#contact" class="btn btn-secondary">Request Details</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="extra-package expandable-item">
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/programme_maldives_srilanka.jpg.jpeg"
+                    alt="Group G8 Maldives and Sri Lanka tour" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <p class="package-card-label">Autumn departure</p>
+
+                  <h3 class="h3 card-title">Group G8 · Maldives · Sri Lanka</h3>
+
+                  <p class="card-text">
+                    A relaxing finale to the season with paradise islands, cultural richness, and warm coastal light.
+                    <br><strong>09 October – 21 October 2026</strong>
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">13D / 12N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Group tour</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Maldives · Sri Lanka</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <p class="price-note">October 2026</p>
+
+                  <p class="price">Coming soon</p>
+
+                  <a href="#contact" class="btn btn-secondary">Request Details</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
 
         </div>
-      </li>
-
-      <!-- G2 -->
-      <li class="extra-package" style="display:none;">
-        <div class="package-card">
-
-          <figure class="card-banner">
-            <img src="assets/images/g2-hongkong-danang-hanoi.png"
-                 alt="Group G2 Hong Kong Da Nang Hanoi Tour"
-                 loading="lazy">
-          </figure>
-
-          <div class="card-content">
-            <h3 class="h3 card-title">Group G2 – Hong Kong · Da Nang · Hanoi</h3>
-
-            <p class="card-text">
-              A dynamic Asia journey mixing modern Hong Kong with Vietnam’s cultural highlights.
-              <br><strong>03 July – 17 July 2026</strong>
-            </p>
-
-            <ul class="card-meta-list">
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="time"></ion-icon>
-                  <p class="text">15D / 14N</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="people"></ion-icon>
-                  <p class="text">Group tour</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="location"></ion-icon>
-                  <p class="text">Hong Kong · Vietnam</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card-price">
-            <p class="price">Coming soon </span></p>
-            <button class="btn btn-secondary">Inquire for info</button>
-          </div>
-
-        </div>
-      </li>
-
-      <!-- G3 -->
-      <li class="extra-package" style="display:none;">
-        <div class="package-card">
-
-          <figure class="card-banner">
-            <img src="assets/images/g3-kuala-maldives-srilanka.png"
-                 alt="Group G3 Kuala Lumpur Maldives Sri Lanka Tour"
-                 loading="lazy">
-          </figure>
-
-          <div class="card-content">
-            <h3 class="h3 card-title">Group G3 – Kuala Lumpur · Maldives · Sri Lanka</h3>
-
-            <p class="card-text">
-              A diverse Asia experience blending modern cities, tropical islands, and heritage.
-              <br><strong>17 July – 30 July 2026</strong>
-            </p>
-
-            <ul class="card-meta-list">
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="time"></ion-icon>
-                  <p class="text">14D / 13N</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="people"></ion-icon>
-                  <p class="text">Group tour</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="location"></ion-icon>
-                  <p class="text">Malaysia · Maldives · Sri Lanka</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card-price">
-            <p class="price">Coming soon </span></p>
-            <button class="btn btn-secondary">Inquire for info</button>
-          </div>
-
-        </div>
-      </li>
-
-      <!-- G4 -->
-      <li class="extra-package" style="display:none;">
-        <div class="package-card">
-
-          <figure class="card-banner">
-            <img src="assets/images/g4-bangkok-danang-hanoi.png"
-                 alt="Group G4 Bangkok Da Nang Hanoi Tour"
-                 loading="lazy">
-          </figure>
-
-          <div class="card-content">
-            <h3 class="h3 card-title">Group G4 – Bangkok · Da Nang · Hanoi</h3>
-
-            <p class="card-text">
-              A classic Southeast Asia itinerary through Thailand and Vietnam.
-              <br><strong>01 August – 14 August 2026</strong>
-            </p>
-
-            <ul class="card-meta-list">
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="time"></ion-icon>
-                  <p class="text">14D / 13N</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="people"></ion-icon>
-                  <p class="text">Group tour</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="location"></ion-icon>
-                  <p class="text">Thailand · Vietnam</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card-price">
-            <p class="price">Coming soon </span></p>
-            <button class="btn btn-secondary">Inquire for info</button>
-          </div>
-
-        </div>
-      </li>
-
-      <!-- G5 -->
-      <li class="extra-package" style="display:none;">
-        <div class="package-card">
-
-          <figure class="card-banner">
-            <img src="assets/images/g5-kuala-bali-phuket.png"
-                 alt="Group G5 Kuala Lumpur Bali Phuket Tour"
-                 loading="lazy">
-          </figure>
-
-          <div class="card-content">
-            <h3 class="h3 card-title">Group G5 – Kuala Lumpur · Bali · Phuket</h3>
-
-            <p class="card-text">
-              An island-focused Asia tour featuring Malaysia, Indonesia, and Thailand.
-              <br><strong>08 August – 22 August 2026</strong>
-            </p>
-
-            <ul class="card-meta-list">
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="time"></ion-icon>
-                  <p class="text">15D / 14N</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="people"></ion-icon>
-                  <p class="text">Group tour</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="location"></ion-icon>
-                  <p class="text">Malaysia · Indonesia · Thailand</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card-price">
-            <p class="price">Coming soon </span></p>
-            <button class="btn btn-secondary">Inquire for info</button>
-          </div>
-
-        </div>
-      </li>
-
-      <!-- G6 -->
-      <li class="extra-package" style="display:none;">
-        <div class="package-card">
-
-          <figure class="card-banner">
-            <img src="assets/images/g6-bangkok-danang-hanoi.png"
-                 alt="Group G6 Bangkok Da Nang Hanoi Tour"
-                 loading="lazy">
-          </figure>
-
-          <div class="card-content">
-            <h3 class="h3 card-title">Group G6 – Bangkok · Da Nang · Hanoi</h3>
-
-            <p class="card-text">
-              A well-balanced Asia group tour combining cities, culture, and relaxation.
-              <br><strong>15 August – 29 August 2026</strong>
-            </p>
-
-            <ul class="card-meta-list">
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="time"></ion-icon>
-                  <p class="text">15D / 14N</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="people"></ion-icon>
-                  <p class="text">Group tour</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="location"></ion-icon>
-                  <p class="text">Thailand · Vietnam</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card-price">
-            <p class="price">Coming soon </span></p>
-            <button class="btn btn-secondary">Inquire for info</button>
-          </div>
-
-        </div>
-      </li>
-
-      <!-- G8 -->
-      <li class="extra-package" style="display:none;">
-        <div class="package-card">
-
-          <figure class="card-banner">
-            <img src="assets/images/g8-maldives-srilanka.png"
-                 alt="Group G8 Maldives Sri Lanka Tour"
-                 loading="lazy">
-          </figure>
-
-          <div class="card-content">
-            <h3 class="h3 card-title">Group G8 – Maldives · Sri Lanka</h3>
-
-            <p class="card-text">
-              A relaxing and cultural journey combining paradise islands and tradition.
-              <br><strong>09 October – 21 October 2026</strong>
-            </p>
-
-            <ul class="card-meta-list">
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="time"></ion-icon>
-                  <p class="text">13D / 12N</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="people"></ion-icon>
-                  <p class="text">Group tour</p>
-                </div>
-              </li>
-
-              <li class="card-meta-item">
-                <div class="meta-box">
-                  <ion-icon name="location"></ion-icon>
-                  <p class="text">Maldives · Sri Lanka</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card-price">
-            <p class="price">Coming soon </span></p>
-            <button class="btn btn-secondary">Inquire for info</button>
-          </div>
-
-        </div>
-      </li>
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
@@ -742,45 +899,70 @@
       <section class="gallery" id="gallery">
         <div class="container">
 
-          <p class="section-subtitle">Photo Gallery</p>
+          <div class="section-heading" data-reveal>
+            <p class="section-subtitle">Travel Diary</p>
 
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
+            <h2 class="h2 section-title">The kind of moments that linger.</h2>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
+            <p class="section-text">
+              A preview of the coastlines, textures, and city scenes our travellers return home talking about.
+            </p>
+          </div>
 
           <ul class="gallery-list">
 
-            <li class="gallery-item">
+            <li class="gallery-item" data-reveal>
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+                <img src="./assets/images/gallery-1.jpg" alt="Elegant seaside resort view">
+
+                <figcaption class="gallery-caption">
+                  <span>Quiet shorelines</span>
+                  <p>Slow mornings, soft light, and room to breathe.</p>
+                </figcaption>
               </figure>
             </li>
 
-            <li class="gallery-item">
+            <li class="gallery-item" data-reveal>
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+                <img src="./assets/images/gallery-2.jpg" alt="Lush tropical travel moment">
+
+                <figcaption class="gallery-caption">
+                  <span>Tropical calm</span>
+                  <p>Scenery that feels cinematic without trying too hard.</p>
+                </figcaption>
               </figure>
             </li>
 
-            <li class="gallery-item">
+            <li class="gallery-item" data-reveal>
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+                <img src="./assets/images/gallery-3.jpg" alt="Traveller enjoying a luxury destination">
+
+                <figcaption class="gallery-caption">
+                  <span>Elevated moments</span>
+                  <p>Travel designed to feel effortless, polished, and memorable.</p>
+                </figcaption>
               </figure>
             </li>
 
-            <li class="gallery-item">
+            <li class="gallery-item" data-reveal>
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+                <img src="./assets/images/gallery-4.jpg" alt="Stylish destination atmosphere at sunset">
+
+                <figcaption class="gallery-caption">
+                  <span>Golden evenings</span>
+                  <p>The hours that turn a beautiful trip into a vivid memory.</p>
+                </figcaption>
               </figure>
             </li>
 
-            <li class="gallery-item">
+            <li class="gallery-item" data-reveal>
               <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+                <img src="./assets/images/gallery-5.jpg" alt="Refined travel scene with scenic architecture">
+
+                <figcaption class="gallery-caption">
+                  <span>City textures</span>
+                  <p>Architecture, detail, and atmosphere layered into every stop.</p>
+                </figcaption>
               </figure>
             </li>
 
@@ -800,19 +982,29 @@
       <section class="cta" id="contact">
         <div class="container">
 
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
+          <div class="cta-content" data-reveal>
+            <p class="section-subtitle">Plan Your Escape</p>
 
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+            <h2 class="h2 section-title">Ready for a more elevated way to travel Asia?</h2>
 
             <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
+              Tell us the departure, atmosphere, and pace you want. We will guide you toward the itinerary that fits
+              your style.
             </p>
+
+            <ul class="cta-list">
+              <li>Curated small-group departures</li>
+              <li>Refined hotels and smooth logistics</li>
+              <li>Direct support before and during travel</li>
+            </ul>
           </div>
 
-          <button class="btn btn-secondary">Contact Us !</button>
+          <div class="cta-actions" data-reveal>
+            <a href="tel:+212610108241" class="btn btn-secondary">Call Us</a>
+            <a href="mailto:Hamzatourasie@gmail.com" class="btn btn-tertiary">Email Us</a>
+
+            <p class="cta-note">Available from Tetouan, Morocco for departures across Asia.</p>
+          </div>
 
         </div>
       </section>
@@ -835,12 +1027,12 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
-            <img src="assets\images\remove-photos-background-removed.png" alt="Tourly logo">
+          <a href="#home" class="logo">
+            <img src="assets/images/remove-photos-background-removed.png" alt="Asia This Way logo">
           </a>
 
           <p class="footer-text">
-            The best travel agency in ASIA
+            Curated Asia departures for travellers who want beauty, comfort, and seamless planning.
           </p>
 
         </div>
@@ -850,7 +1042,7 @@
           <h4 class="contact-title">Contact Us</h4>
 
           <p class="contact-text">
-            Feel free to contact and reach us !!
+            Tell us your preferred dates and atmosphere, and we will help you choose the right departure.
           </p>
 
           <ul>
@@ -858,13 +1050,13 @@
             <li class="contact-item">
               <ion-icon name="call-outline"></ion-icon>
 
-              <a href="tel:+01123456790" class="contact-link">+212610108241</a>
+              <a href="tel:+212610108241" class="contact-link">+212 610108241</a>
             </li>
 
             <li class="contact-item">
               <ion-icon name="mail-outline"></ion-icon>
 
-              <a href="mailto:info.tourly.com" class="contact-link">Hamzatourasie@gmail.com</a>
+              <a href="mailto:Hamzatourasie@gmail.com" class="contact-link">Hamzatourasie@gmail.com</a>
             </li>
 
             <li class="contact-item">
