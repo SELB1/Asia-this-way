@@ -44,3 +44,71 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+/**
+ * Image Slider
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const caption = document.getElementById("caption");
+  const closeBtn = document.querySelector(".lightbox .close");
+  const thumbs = document.querySelectorAll(".grid-lightbox .thumb img");
+
+  thumbs.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "block";
+      lightboxImg.src = img.src;
+      caption.textContent = img.alt;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  // Close lightbox when clicking outside image
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) lightbox.style.display = "none";
+  });
+});
+
+/* DESTINATIONS TOGGLE */
+
+const destBtn = document.getElementById("viewAllDestBtn");
+
+if (destBtn) {
+  destBtn.addEventListener("click", function () {
+
+    const extras = document.querySelectorAll(".extra-dest");
+    const isHidden = extras[0].style.display === "none";
+
+    extras.forEach(el => {
+      el.style.display = isHidden ? "block" : "none";
+    });
+
+    this.textContent = isHidden ? "Show Less" : "More Destinations";
+
+  });
+}
+
+/* PACKAGE TOGGLE */
+
+const pkgBtn = document.getElementById("viewAllBtn");
+
+if (pkgBtn) {
+  pkgBtn.addEventListener("click", function () {
+
+    const extras = document.querySelectorAll(".extra-package");
+    const isHidden = extras[0].style.display === "none";
+
+    extras.forEach(el => {
+      el.style.display = isHidden ? "block" : "none";
+    });
+
+    this.textContent = isHidden ? "Show Less" : "View All Packages";
+
+  });
+}
+

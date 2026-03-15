@@ -184,175 +184,117 @@
 
 
       <!-- 
-        - #TOUR SEARCH
-      -->
-
-      <section class="tour-search">
-        <div class="container">
-
-          <form action="" class="tour-search-form">
-
-            <div class="input-wrapper">
-              <label for="destination" class="input-label">Search Destination*</label>
-
-              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
-                class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="people" class="input-label">Pax Number*</label>
-
-              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkin" class="input-label">Checkin Date**</label>
-
-              <input type="date" name="checkin" id="checkin" required class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkout" class="input-label">Checkout Date*</label>
-
-              <input type="date" name="checkout" id="checkout" required class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">Inquire now</button>
-
-          </form>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
         - #POPULAR
       -->
 
       <section class="popular" id="destination">
-        <div class="container">
+  <div class="container">
 
-          <p class="section-subtitle">Uncover place</p>
+    <p class="section-subtitle">Uncover place</p>
+    <h2 class="h2 section-title">Destinations</h2>
+    <p class="section-text">
+      Most popular destinations with Asia This Way
+    </p>
 
-          <h2 class="h2 section-title">Popular destinations</h2>
+    <ul class="popular-list">
 
-          <p class="section-text">
-            Most popular destinations with Asia This Way
-          </p>
+      <!-- ALWAYS VISIBLE (FIRST 3) -->
 
-          <ul class="popular-list">
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="assets\images\Phuket-honeymoon.png" alt="San miguel, italy" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Thailand</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Phuket</a>
-                  </h3>
-
-                  <p class="card-text">
-                    A top island destination with beaches, culture, and nightlife.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="assets\images\Malaysia.png" alt="Malaysia" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Malaysia</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kuala Lumpur</a>
-                  </h3>
-
-                  <p class="card-text">
-                    A vibrant city known for iconic towers, culture, and modern life.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="assets\images\Thailand.png" alt="Kyoto temple, japan" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Thailand</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Krabi</a>
-                  </h3>
-
-                  <p class="card-text">
-                    A tropical destination with stunning beaches and island scenery.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">More destintion</button>
-
+      <li>
+        <div class="popular-card">
+          <figure class="card-img">
+            <img src="assets/images/Thailand.png" loading="lazy">
+          </figure>
+          <div class="card-content">
+            <p class="card-subtitle"><a href="#">Thailand</a></p>
+            <p class="card-text">Beaches, culture & nightlife.</p>
+          </div>
         </div>
-      </section>
+      </li>
+
+      <li>
+        <div class="popular-card">
+          <figure class="card-img">
+            <img src="assets/images/Malaysia.png" loading="lazy">
+          </figure>
+          <div class="card-content">
+            <p class="card-subtitle"><a href="#">Malaysia</a></p>
+            <p class="card-text">Modern cities & rich culture.</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="popular-card">
+          <figure class="card-img">
+            <img src="assets/images/Maldives.png" loading="lazy">
+          </figure>
+          <div class="card-content">
+            <p class="card-subtitle"><a href="#">Maldives</a></p>
+            <p class="card-text">Luxury islands & clear waters.</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- BUTTON -->
+
+      <li style="grid-column:1/-1; text-align:center;">
+        <button id="viewAllDestBtn" class="btn btn-primary">
+          More Destinations
+        </button>
+      </li>
+
+      <!-- HIDDEN DESTINATIONS -->
+
+      <li class="extra-dest" style="display:none;">
+        <div class="popular-card">
+          <figure class="card-img">
+            <img src="assets/images/Philippines.png">
+          </figure>
+          <div class="card-content">
+            <p class="card-subtitle">Philippines</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="extra-dest" style="display:none;">
+        <div class="popular-card">
+          <figure class="card-img">
+            <img src="assets/images/Hong Kong.png">
+          </figure>
+          <div class="card-content">
+            <p class="card-subtitle">Hong Kong</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="extra-dest" style="display:none;">
+        <div class="popular-card">
+          <figure class="card-img">
+            <img src="assets/images/Sri Lanka.png">
+          </figure>
+          <div class="card-content">
+            <p class="card-subtitle">Sri Lanka</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="extra-dest" style="display:none;">
+        <div class="popular-card">
+          <figure class="card-img">
+            <img src="assets/images/Vietnam.png">
+          </figure>
+          <div class="card-content">
+            <p class="card-subtitle">Vietnam</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
 
 
 
@@ -362,27 +304,27 @@
         - #PACKAGE
       -->
 
-      <section class="package" id="package">
-  <div class="container">
+    <section class="package" id="package">
+        <div class="container">
 
-    <p class="section-subtitle">Our Group Tours</p>
+          <p class="section-subtitle">Our Group Tours</p>
 
-    <h2 class="h2 section-title">Asia This Way Packages</h2>
+          <h2 class="h2 section-title">Asia This Way Packages</h2>
 
-    <p class="section-text">
-      Carefully designed group tours across Asia with fixed dates and unique itineraries.
-    </p>
+          <p class="section-text">
+            Carefully designed group tours across Asia with fixed dates and unique itineraries.
+          </p>
 
-    <ul class="package-list">
-      <!-- G0 -->
-<li>
-  <div class="package-card">
+          <ul class="package-list">
+            <!-- G0 -->
+            <li>
+              <div class="package-card">
 
-    <figure class="card-banner">
+              <figure class="card-banner">
       <img src="assets\images\maldives_srilanka.png"
            alt="Group G0 Maldives Sri Lanka Tour"
            loading="lazy">
-    </figure>
+      </figure>
 
     <div class="card-content">
       <h3 class="h3 card-title">Group G0 – Maldives · Sri Lanka</h3>
@@ -429,9 +371,14 @@
   </div>
 </li>
 
+      <li style="grid-column:1/-1; text-align:center;">
+        <button id="viewAllBtn" class="btn btn-primary">
+          View All Packages
+        </button>
+      </li>
 
+      <li class="extra-package" style="display:none;">
       <!-- G1 -->
-      <li>
         <div class="package-card">
 
           <figure class="card-banner">
@@ -473,15 +420,15 @@
           </div>
 
           <div class="card-price">
-            <p class="price">On request <span>/ per person</span></p>
-            <button class="btn btn-secondary">Book Now</button>
+            <p class="price">Coming soon </span></p>
+            <button class="btn btn-secondary">Inquire for info</button>
           </div>
 
         </div>
       </li>
 
       <!-- G2 -->
-      <li>
+      <li class="extra-package" style="display:none;">
         <div class="package-card">
 
           <figure class="card-banner">
@@ -523,15 +470,15 @@
           </div>
 
           <div class="card-price">
-            <p class="price">On request <span>/ per person</span></p>
-            <button class="btn btn-secondary">Book Now</button>
+            <p class="price">Coming soon </span></p>
+            <button class="btn btn-secondary">Inquire for info</button>
           </div>
 
         </div>
       </li>
 
       <!-- G3 -->
-      <li>
+      <li class="extra-package" style="display:none;">
         <div class="package-card">
 
           <figure class="card-banner">
@@ -573,15 +520,15 @@
           </div>
 
           <div class="card-price">
-            <p class="price">On request <span>/ per person</span></p>
-            <button class="btn btn-secondary">Book Now</button>
+            <p class="price">Coming soon </span></p>
+            <button class="btn btn-secondary">Inquire for info</button>
           </div>
 
         </div>
       </li>
 
       <!-- G4 -->
-      <li>
+      <li class="extra-package" style="display:none;">
         <div class="package-card">
 
           <figure class="card-banner">
@@ -623,15 +570,15 @@
           </div>
 
           <div class="card-price">
-            <p class="price">On request <span>/ per person</span></p>
-            <button class="btn btn-secondary">Book Now</button>
+            <p class="price">Coming soon </span></p>
+            <button class="btn btn-secondary">Inquire for info</button>
           </div>
 
         </div>
       </li>
 
       <!-- G5 -->
-      <li>
+      <li class="extra-package" style="display:none;">
         <div class="package-card">
 
           <figure class="card-banner">
@@ -673,15 +620,15 @@
           </div>
 
           <div class="card-price">
-            <p class="price">On request <span>/ per person</span></p>
-            <button class="btn btn-secondary">Book Now</button>
+            <p class="price">Coming soon </span></p>
+            <button class="btn btn-secondary">Inquire for info</button>
           </div>
 
         </div>
       </li>
 
       <!-- G6 -->
-      <li>
+      <li class="extra-package" style="display:none;">
         <div class="package-card">
 
           <figure class="card-banner">
@@ -723,15 +670,15 @@
           </div>
 
           <div class="card-price">
-            <p class="price">On request <span>/ per person</span></p>
-            <button class="btn btn-secondary">Book Now</button>
+            <p class="price">Coming soon </span></p>
+            <button class="btn btn-secondary">Inquire for info</button>
           </div>
 
         </div>
       </li>
 
       <!-- G8 -->
-      <li>
+      <li class="extra-package" style="display:none;">
         <div class="package-card">
 
           <figure class="card-banner">
@@ -773,17 +720,13 @@
           </div>
 
           <div class="card-price">
-            <p class="price">On request <span>/ per person</span></p>
-            <button class="btn btn-secondary">Book Now</button>
+            <p class="price">Coming soon </span></p>
+            <button class="btn btn-secondary">Inquire for info</button>
           </div>
 
         </div>
       </li>
-
-    </ul>
-
-    <button class="btn btn-primary">View All Packages</button>
-
+    </div>
   </div>
 </section>
 
@@ -931,20 +874,6 @@
             </li>
 
           </ul>
-
-        </div>
-
-        <div class="footer-form">
-
-          <p class="form-text">
-            Subscribe to our newsletter for more update & news!!
-          </p>
-
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
-
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
-          </form>
 
         </div>
 
