@@ -1521,10 +1521,6 @@ main {
   transform: translateY(0);
 }
 
-.header {
-  padding-top: 34px;
-}
-
 .header-top,
 .header-bottom {
   border-color: hsla(0, 0%, 100%, 0.1);
@@ -1535,6 +1531,14 @@ main {
 .header-top .container,
 .header-bottom .container {
   gap: 16px;
+}
+
+.header-top .container {
+  grid-template-columns: auto 1fr auto;
+}
+
+.header-top .logo {
+  justify-self: center;
 }
 
 .helpline-box .icon-box {
@@ -1553,7 +1557,7 @@ main {
 }
 
 .header-top .logo img {
-  max-width: 132px;
+  max-width: 80px;
   filter: drop-shadow(0 14px 30px hsla(220, 32%, 8%, 0.24));
 }
 
