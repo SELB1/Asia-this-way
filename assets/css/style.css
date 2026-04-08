@@ -1355,7 +1355,7 @@ address {
 }
 
 .close:hover {
-  color: #ff7a00;
+  color: #8e68e6;
 }
 
 
@@ -1369,15 +1369,15 @@ address {
 :root {
   --ff-poppins: "Manrope", sans-serif;
   --ff-montserrat: "Cormorant Garamond", serif;
-  --warm-white: hsl(42, 33%, 97%);
-  --sand: hsl(39, 38%, 92%);
-  --champagne: hsl(41, 52%, 78%);
-  --gold-deep: hsl(34, 37%, 47%);
-  --ink: hsl(220, 29%, 12%);
-  --ink-soft: hsl(220, 15%, 32%);
-  --line: hsla(220, 22%, 16%, 0.08);
-  --shadow-soft: 0 18px 45px hsla(220, 35%, 12%, 0.12);
-  --shadow-strong: 0 30px 70px hsla(220, 45%, 10%, 0.18);
+  --warm-white: hsl(270, 33%, 98%);
+  --sand: hsl(268, 30%, 94%);
+  --champagne: hsl(270, 62%, 83%);
+  --gold-deep: hsl(268, 54%, 47%);
+  --ink: hsl(262, 35%, 16%);
+  --ink-soft: hsl(264, 18%, 34%);
+  --line: hsla(264, 24%, 16%, 0.1);
+  --shadow-soft: 0 18px 45px hsla(262, 40%, 10%, 0.14);
+  --shadow-strong: 0 30px 70px hsla(262, 50%, 8%, 0.2);
   --section-padding: 88px;
   --radius-15: 20px;
   --radius-25: 30px;
@@ -1394,9 +1394,9 @@ body {
   isolation: isolate;
   color: var(--ink-soft);
   background:
-    radial-gradient(circle at top left, hsla(40, 76%, 84%, 0.38), transparent 28%),
-    radial-gradient(circle at top right, hsla(198, 31%, 82%, 0.22), transparent 24%),
-    linear-gradient(180deg, hsl(42, 45%, 98%) 0%, hsl(38, 36%, 95%) 46%, hsl(42, 31%, 98%) 100%);
+    radial-gradient(circle at top left, hsla(270, 85%, 84%, 0.34), transparent 28%),
+    radial-gradient(circle at top right, hsla(258, 50%, 86%, 0.26), transparent 24%),
+    linear-gradient(180deg, hsl(268, 52%, 98%) 0%, hsl(268, 38%, 95%) 46%, hsl(270, 34%, 98%) 100%);
 }
 
 body::before {
@@ -1539,8 +1539,8 @@ main {
 
 .helpline-box .icon-box {
   color: var(--ink);
-  background: linear-gradient(135deg, hsl(43, 61%, 78%) 0%, hsl(35, 46%, 60%) 100%);
-  box-shadow: 0 10px 24px hsla(35, 45%, 16%, 0.2);
+  background: linear-gradient(135deg, hsl(271, 80%, 84%) 0%, hsl(266, 58%, 61%) 100%);
+  box-shadow: 0 10px 24px hsla(265, 48%, 16%, 0.24);
 }
 
 .helpline-title {
@@ -1564,12 +1564,12 @@ main {
 
 .social-link:is(:hover, :focus) {
   color: var(--warm-white);
-  background: hsla(41, 52%, 78%, 0.12);
-  border-color: hsla(41, 52%, 78%, 0.35);
+  background: hsla(270, 62%, 83%, 0.16);
+  border-color: hsla(270, 62%, 83%, 0.4);
 }
 
 .header .navbar {
-  background: hsla(42, 31%, 96%, 0.96);
+  background: hsla(270, 38%, 96%, 0.96);
   box-shadow: var(--shadow-strong);
   backdrop-filter: blur(16px);
 }
@@ -1662,8 +1662,8 @@ main {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 18% 20%, hsla(42, 80%, 76%, 0.2), transparent 22%),
-    linear-gradient(180deg, transparent 66%, hsl(42, 45%, 97%) 100%);
+    radial-gradient(circle at 18% 20%, hsla(271, 88%, 77%, 0.22), transparent 22%),
+    linear-gradient(180deg, transparent 66%, hsl(270, 48%, 97%) 100%);
 }
 
 .hero .container {
@@ -1914,10 +1914,10 @@ main {
   display: inline-flex;
   margin-bottom: 14px;
   padding: 7px 12px;
-  border: 1px solid hsla(41, 52%, 78%, 0.24);
+  border: 1px solid hsla(270, 62%, 83%, 0.34);
   border-radius: 999px;
   color: var(--champagne);
-  background: hsla(41, 52%, 78%, 0.08);
+  background: hsla(270, 62%, 83%, 0.14);
   font-size: 0.72rem;
   font-weight: var(--fw-700);
   letter-spacing: 0.18em;
@@ -2012,9 +2012,9 @@ main {
   display: inline-flex;
   margin-bottom: 18px;
   padding: 7px 12px;
-  border: 1px solid hsla(35, 46%, 60%, 0.24);
+  border: 1px solid hsla(268, 54%, 47%, 0.3);
   border-radius: 999px;
-  background: hsla(35, 46%, 60%, 0.08);
+  background: hsla(268, 54%, 47%, 0.12);
 }
 
 .package-card .card-title {
@@ -2051,15 +2051,15 @@ main {
 }
 
 .featured-package {
-  border-color: hsla(35, 46%, 60%, 0.24);
+  border-color: hsla(268, 54%, 47%, 0.34);
 }
 
 .featured-package .card-price {
-  background: linear-gradient(160deg, hsl(33, 34%, 25%) 0%, hsl(220, 30%, 16%) 100%);
+  background: linear-gradient(160deg, hsl(269, 34%, 24%) 0%, hsl(254, 30%, 16%) 100%);
 }
 
 .price-note {
-  color: hsla(41, 52%, 78%, 0.72);
+  color: hsla(270, 62%, 83%, 0.78);
   margin-bottom: 12px;
 }
 
@@ -2142,7 +2142,7 @@ main {
   padding: 34px 26px;
   overflow: hidden;
   border-radius: 32px;
-  background: linear-gradient(135deg, hsl(220, 31%, 15%) 0%, hsl(28, 30%, 23%) 100%);
+  background: linear-gradient(135deg, hsl(262, 36%, 17%) 0%, hsl(273, 33%, 26%) 100%);
   box-shadow: var(--shadow-strong);
 }
 
@@ -2159,7 +2159,7 @@ main {
   height: 260px;
   top: -120px;
   right: -60px;
-  background: hsla(41, 52%, 78%, 0.13);
+  background: hsla(270, 62%, 83%, 0.2);
 }
 
 .cta .container::after {
@@ -2167,7 +2167,7 @@ main {
   height: 180px;
   bottom: -90px;
   left: -40px;
-  background: hsla(194, 36%, 74%, 0.08);
+  background: hsla(256, 52%, 74%, 0.14);
 }
 
 .cta-content,
@@ -2248,7 +2248,7 @@ address,
 .contact-text,
 .copyright,
 .footer-bottom-link {
-  color: hsla(42, 33%, 92%, 0.76);
+  color: hsla(270, 44%, 92%, 0.78);
 }
 
 .footer-text,
@@ -2380,6 +2380,120 @@ address {
 }
 
 @media (max-width: 767px) {
+  :root {
+    --section-padding: 56px;
+  }
+
+  .container {
+    padding-inline: 14px;
+  }
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .section-heading .section-title {
+    max-width: 18ch;
+    line-height: 1.06;
+  }
+
+  .section-subtitle {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+  }
+
+  .section-text {
+    max-width: 34ch;
+    margin-bottom: 20px;
+    font-size: 0.86rem;
+    line-height: 1.58;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  .signature-text,
+  .package-card .card-text,
+  .popular-card .card-text,
+  .gallery-caption p,
+  .cta-note {
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+
+  .signature-text,
+  .package-card .card-text,
+  .popular-card .card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .signature-grid,
+  .package-list,
+  .popular-list {
+    gap: 16px;
+  }
+
+  .signature-card {
+    padding: 20px;
+  }
+
+  .popular-card {
+    height: 380px;
+  }
+
+  .popular-card .card-content {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    padding: 14px;
+  }
+
+  .card-tag {
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+  }
+
+  .popular-card .card-subtitle {
+    margin-bottom: 8px;
+    font-size: clamp(1.35rem, 6vw, 1.9rem);
+  }
+
+  .package-card .card-content {
+    padding: 24px 18px;
+  }
+
+  .card-meta-list {
+    max-width: 100%;
+    justify-content: flex-start;
+    padding: 6px;
+    row-gap: 6px;
+  }
+
+  .meta-box .text {
+    font-size: 0.68rem;
+  }
+
+  .cta .container {
+    gap: 20px;
+    padding: 24px 18px;
+  }
+
+  .cta-list li:nth-child(n+3) {
+    display: none;
+  }
+
+  .cta-note {
+    display: none;
+  }
+
   .hero {
     padding-top: 124px;
     padding-bottom: 74px;
@@ -2401,6 +2515,11 @@ address {
     margin-bottom: 18px;
     font-size: 0.88rem;
     line-height: 1.65;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
   }
 
   .hero-panel {
@@ -2466,6 +2585,27 @@ address {
 }
 
 @media (max-width: 479px) {
+  .hero-panel {
+    display: none;
+  }
+
+  .hero {
+    padding-bottom: 56px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.72rem, 10vw, 2.5rem);
+  }
+
+  .section-text,
+  .gallery-caption p,
+  .signature-text,
+  .package-card .card-text,
+  .popular-card .card-text {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
   .hero-highlights {
     grid-template-columns: 1fr;
   }
@@ -2498,23 +2638,23 @@ address {
 \*-----------------------------------*/
 
 html[data-theme="dark"] {
-  --warm-white: hsl(220, 30%, 93%);
-  --sand: hsl(220, 18%, 16%);
-  --champagne: hsl(40, 55%, 72%);
-  --gold-deep: hsl(38, 48%, 64%);
-  --ink: hsl(220, 33%, 92%);
-  --ink-soft: hsl(220, 17%, 76%);
+  --warm-white: hsl(270, 38%, 93%);
+  --sand: hsl(262, 22%, 16%);
+  --champagne: hsl(270, 66%, 78%);
+  --gold-deep: hsl(271, 62%, 70%);
+  --ink: hsl(270, 35%, 94%);
+  --ink-soft: hsl(270, 18%, 79%);
   --line: hsla(0, 0%, 100%, 0.12);
-  --shadow-soft: 0 16px 34px hsla(220, 38%, 4%, 0.36);
-  --shadow-strong: 0 26px 60px hsla(220, 48%, 3%, 0.55);
+  --shadow-soft: 0 16px 34px hsla(266, 46%, 4%, 0.38);
+  --shadow-strong: 0 26px 60px hsla(266, 56%, 3%, 0.58);
   color-scheme: dark;
 }
 
 html[data-theme="dark"] body {
   background:
-    radial-gradient(circle at 8% 0%, hsla(40, 52%, 40%, 0.12), transparent 30%),
-    radial-gradient(circle at 95% 8%, hsla(198, 52%, 38%, 0.11), transparent 26%),
-    linear-gradient(180deg, hsl(222, 32%, 11%) 0%, hsl(222, 28%, 10%) 48%, hsl(222, 30%, 9%) 100%);
+    radial-gradient(circle at 8% 0%, hsla(271, 66%, 52%, 0.14), transparent 30%),
+    radial-gradient(circle at 95% 8%, hsla(255, 60%, 45%, 0.13), transparent 26%),
+    linear-gradient(180deg, hsl(262, 34%, 11%) 0%, hsl(262, 30%, 10%) 48%, hsl(262, 33%, 9%) 100%);
 }
 
 html[data-theme="dark"] .header-top,
@@ -2571,7 +2711,7 @@ html[data-theme="dark"] .signature-title {
 }
 
 html[data-theme="dark"] .cta .container {
-  background: linear-gradient(135deg, hsl(222, 30%, 13%) 0%, hsl(30, 22%, 18%) 100%);
+  background: linear-gradient(135deg, hsl(262, 34%, 13%) 0%, hsl(272, 28%, 19%) 100%);
 }
 
 html[data-theme="dark"] .footer-top {
