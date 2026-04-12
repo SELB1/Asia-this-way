@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Group G1 Hanoi, Da Nang, and Bangkok by Asia This Way. 16 days of curated city and coast experiences with premium group travel.">
+  <title>Group G1 | Hanoi - Da Nang - Bangkok</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: hsl(270, 33%, 98%);
+      --bg-soft: hsl(268, 30%, 94%);
+      --ink: hsl(262, 35%, 16%);
+      --ink-soft: hsl(264, 18%, 34%);
+      --gold: hsl(268, 54%, 47%);
+      --gold-soft: hsl(270, 62%, 83%);
+      --card: hsla(0, 0%, 100%, 0.82);
+      --line: hsla(264, 24%, 16%, 0.1);
+      --shadow-soft: 0 18px 45px hsla(262, 40%, 10%, 0.14);
+      --shadow-strong: 0 26px 60px hsla(262, 50%, 8%, 0.2);
+      --hero-image: url("assets/images/first_page_of_g1_program.png");
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      color: var(--ink-soft);
+      background:
+        radial-gradient(circle at 12% 0%, hsla(270, 85%, 84%, 0.34), transparent 26%),
+        radial-gradient(circle at 94% 8%, hsla(258, 50%, 86%, 0.24), transparent 25%),
+        linear-gradient(180deg, hsl(268, 52%, 98%) 0%, hsl(268, 38%, 95%) 40%, hsl(270, 34%, 98%) 100%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    [data-reveal].revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .g-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(14px);
+      background: hsla(270, 52%, 98%, 0.76);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .g-topbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+      white-space: nowrap;
+    }
+
+    .g-brand {
+      display: inline-flex;
+      align-items: center;
+      font-family: "Cormorant Garamond", serif;
+      color: var(--ink);
+      font-size: 1.45rem;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      flex-shrink: 0;
+    }
+
+    .g-back-link {
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: hsla(0, 0%, 100%, 0.82);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: 0.3s ease;
+    }
+
+    .g-back-link:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .g-top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+
+    .g-quick-nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 3px;
+      scrollbar-width: thin;
+    }
+
+    .g-quick-link {
+      flex: 0 0 auto;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: hsla(0, 0%, 100%, 0.78);
+      color: var(--ink);
+      font-size: 0.64rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: 0.25s ease;
+    }
+
+    .g-quick-link:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .g-lang-switcher,
+    .g-theme-toggle {
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: hsla(0, 0%, 100%, 0.8);
+      color: var(--ink);
+      font-family: "Manrope", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      transition: 0.3s ease;
+    }
+
+    .g-lang-switcher {
+      min-width: 74px;
+      padding: 10px 12px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .g-theme-toggle {
+      padding: 10px 14px;
+      cursor: pointer;
+    }
+
+    .g-theme-toggle:hover,
+    .g-lang-switcher:hover,
+    .g-lang-switcher:focus {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .g-shell {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 26px 20px 90px;
+    }
+
+    .g-hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 34px;
+      padding: 42px 30px;
+      display: grid;
+      gap: 24px;
+      align-items: stretch;
+      background:
+        linear-gradient(120deg, hsla(262, 36%, 10%, 0.9), hsla(262, 34%, 18%, 0.7)),
+        var(--hero-image) center/cover no-repeat;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .g-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 68%, hsla(270, 33%, 98%, 0.84) 100%);
+      pointer-events: none;
+    }
+
+    .g-hero-content,
+    .g-program-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    .g-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid hsla(270, 62%, 83%, 0.3);
+      background: hsla(270, 62%, 83%, 0.14);
+      color: var(--gold-soft);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .g-kicker::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold-soft);
+    }
+
+    .g-title {
+      color: hsl(270, 35%, 98%);
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 7vw, 4.2rem);
+      line-height: 0.95;
+      max-width: 12ch;
+      margin-bottom: 14px;
+      text-wrap: balance;
+    }
+
+    .g-subtitle {
+      max-width: 52ch;
+      margin-bottom: 20px;
+      color: hsla(0, 0%, 100%, 0.82);
+      line-height: 1.75;
+    }
+
+    .g-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .g-chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid hsla(0, 0%, 100%, 0.18);
+      background: hsla(0, 0%, 100%, 0.06);
+      color: hsla(0, 0%, 100%, 0.78);
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .g-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .g-btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      transition: 0.3s ease;
+    }
+
+    .g-btn-primary {
+      color: hsl(270, 40%, 96%);
+      background: linear-gradient(135deg, hsl(262, 30%, 13%) 0%, hsl(266, 35%, 20%) 100%);
+      border: 1px solid hsla(0, 0%, 100%, 0.2);
+      box-shadow: 0 10px 22px hsla(262, 40%, 10%, 0.3);
+    }
+
+    .g-btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .g-btn-ghost {
+      color: hsl(270, 40%, 96%);
+      border: 1px solid hsla(0, 0%, 100%, 0.24);
+      background: hsla(0, 0%, 100%, 0.08);
+    }
+
+    .g-btn-ghost:hover {
+      transform: translateY(-2px);
+      background: hsla(0, 0%, 100%, 0.14);
+    }
+
+    .g-program-card {
+      max-width: 420px;
+      padding: 14px;
+      border-radius: 24px;
+      border: 1px solid hsla(0, 0%, 100%, 0.14);
+      background: hsla(0, 0%, 100%, 0.12);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow-strong);
+    }
+
+    .g-program-stack {
+      display: grid;
+      gap: 10px;
+    }
+
+    .g-program-card img {
+      border-radius: 16px;
+      box-shadow: 0 14px 30px hsla(222, 35%, 10%, 0.28);
+    }
+
+    .g-program-card figcaption {
+      margin-top: 10px;
+      color: hsla(0, 0%, 100%, 0.78);
+      font-size: 0.84rem;
+      line-height: 1.65;
+      text-align: center;
+    }
+
+    .g-stats {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .g-stat {
+      padding: 16px 14px;
+      border-radius: 18px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-soft);
+      text-align: center;
+    }
+
+    .g-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .g-stat span {
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .g-section {
+      margin-top: 58px;
+    }
+
+    .g-section-head {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .g-section-kicker {
+      margin-bottom: 10px;
+      color: var(--gold);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+    }
+
+    .g-section-title {
+      margin-bottom: 10px;
+      color: var(--ink);
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 0.98;
+      text-wrap: balance;
+    }
+
+    .g-section-desc {
+      max-width: 62ch;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .g-stop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .g-stop-card {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--card);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .g-stop-card figure {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+
+    .g-stop-card figure img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .g-stop-card:hover figure img {
+      transform: scale(1.06);
+    }
+
+    .g-stop-body {
+      padding: 18px;
+    }
+
+    .g-stop-city {
+      margin-bottom: 8px;
+      color: var(--gold);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .g-stop-title {
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.7rem;
+      line-height: 1;
+    }
+
+    .g-stop-text {
+      line-height: 1.7;
+    }
+
+    .g-hotel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .g-hotel-card {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--card);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .g-hotel-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 52px hsla(220, 34%, 12%, 0.15);
+    }
+
+    .g-hotel-card figure {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+
+    .g-hotel-card figure img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.55s ease;
+    }
+
+    .g-hotel-card:hover figure img {
+      transform: scale(1.07);
+    }
+
+    .g-hotel-body {
+      padding: 18px;
+    }
+
+    .g-hotel-area {
+      margin-bottom: 10px;
+      color: var(--gold);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .g-hotel-name {
+      margin-bottom: 10px;
+      color: var(--ink);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.8rem;
+      line-height: 0.96;
+    }
+
+    .g-hotel-text {
+      margin-bottom: 14px;
+      line-height: 1.75;
+    }
+
+    .g-hotel-link {
+      width: max-content;
+      border: 1px solid hsla(222, 25%, 15%, 0.18);
+      background: hsla(0, 0%, 100%, 0.7);
+      color: var(--ink);
+    }
+
+    .g-hotel-link:hover {
+      transform: translateY(-2px);
+      border-color: hsla(222, 25%, 15%, 0.32);
+    }
+
+    .g-program-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .g-program-thumb {
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--card);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .g-program-thumb img {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .g-program-thumb figcaption {
+      padding: 10px 12px 12px;
+      text-align: center;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .g-cta {
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 30px 22px;
+      background: linear-gradient(135deg, hsl(262, 31%, 14%) 0%, hsl(273, 30%, 22%) 100%);
+      color: hsla(0, 0%, 100%, 0.86);
+      box-shadow: var(--shadow-strong);
+      text-align: center;
+    }
+
+    .g-cta .g-section-kicker {
+      color: var(--gold-soft);
+    }
+
+    .g-cta .g-section-title {
+      color: hsl(270, 35%, 98%);
+      margin-bottom: 14px;
+    }
+
+    .g-cta .g-section-desc {
+      color: hsla(0, 0%, 100%, 0.78);
+      margin-bottom: 20px;
+    }
+
+    .g-cta .g-btn-row {
+      justify-content: center;
+    }
+
+    .g-footer {
+      margin-top: 52px;
+      text-align: center;
+      color: hsla(264, 18%, 34%, 0.84);
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    html[data-theme="dark"] {
+      --bg-cream: hsl(262, 30%, 9%);
+      --bg-soft: hsl(262, 22%, 12%);
+      --ink: hsl(270, 30%, 92%);
+      --ink-soft: hsl(270, 18%, 76%);
+      --gold: hsl(271, 52%, 67%);
+      --gold-soft: hsl(270, 57%, 78%);
+      --card: hsla(262, 18%, 16%, 0.86);
+      --line: hsla(0, 0%, 100%, 0.12);
+      --shadow-soft: 0 16px 34px hsla(266, 45%, 5%, 0.34);
+      --shadow-strong: 0 26px 58px hsla(266, 52%, 4%, 0.54);
+      color-scheme: dark;
+    }
+
+    html[data-theme="dark"] body {
+      background:
+        radial-gradient(circle at 9% 0%, hsla(271, 66%, 52%, 0.14), transparent 28%),
+        radial-gradient(circle at 96% 8%, hsla(255, 60%, 45%, 0.12), transparent 25%),
+        linear-gradient(180deg, hsl(262, 30%, 10%) 0%, hsl(262, 28%, 9%) 45%, hsl(262, 30%, 8%) 100%);
+    }
+
+    html[data-theme="dark"] .g-topbar {
+      background: hsla(262, 28%, 12%, 0.78);
+    }
+
+    html[data-theme="dark"] .g-back-link,
+    html[data-theme="dark"] .g-lang-switcher,
+    html[data-theme="dark"] .g-theme-toggle,
+    html[data-theme="dark"] .g-quick-link {
+      border-color: var(--line);
+      background: hsla(0, 0%, 100%, 0.08);
+      color: var(--ink);
+    }
+
+    @media (min-width: 920px) {
+      .g-hero {
+        padding: 48px 40px;
+        grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
+      }
+
+      .g-stats {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .g-topbar-inner {
+        padding: 12px 14px;
+      }
+
+      .g-top-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .g-brand {
+        font-size: 1.28rem;
+      }
+
+      .g-quick-link {
+        padding: 7px 10px;
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+      }
+
+      .g-shell {
+        padding-top: 20px;
+      }
+
+      .g-section {
+        margin-top: 38px;
+      }
+
+      .g-hero {
+        border-radius: 24px;
+        padding: 28px 18px;
+      }
+
+      .g-btn {
+        width: 100%;
+      }
+
+      .g-back-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="g-topbar">
+    <div class="g-topbar-inner">
+      <a href="index.html" class="g-brand">Asia This Way</a>
+
+      <div class="g-top-actions">
+        <label class="sr-only" for="languageSwitcherG1">Language</label>
+
+        <select id="languageSwitcherG1" class="g-lang-switcher" data-language-switcher aria-label="Language selector">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+        </select>
+
+        <button type="button" class="g-theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+          <span data-theme-text>Dark mode</span>
+        </button>
+
+        <a href="index.html#package" class="g-back-link">Back To Packages</a>
+      </div>
+
+      <nav class="g-quick-nav" aria-label="Quick page links">
+        <a href="#overview" class="g-quick-link">Overview</a>
+        <a href="#hotels" class="g-quick-link">Route</a>
+        <a href="#booking" class="g-quick-link">Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="g-shell">
+
+    <section class="g-hero" id="overview">
+      <div class="g-hero-content" data-reveal>
+        <p class="g-kicker">Group G1 Departure</p>
+        <h1 class="g-title">Hanoi - Da Nang - Bangkok</h1>
+        <p class="g-subtitle">
+          A 16-day journey across Vietnam and Thailand, blending culture, city energy, and coastline breaks in a smooth,
+          premium-paced group format.
+        </p>
+
+        <div class="g-chip-row">
+          <span class="g-chip">20 Jun - 05 Jul 2026</span>
+          <span class="g-chip">16 Days / 15 Nights</span>
+          <span class="g-chip">Curated Group Tour</span>
+        </div>
+
+        <div class="g-btn-row">
+          <a href="index.html#contact" class="g-btn g-btn-primary">Reserve Your Spot</a>
+          <a href="#hotels" class="g-btn g-btn-ghost">See Route Details</a>
+        </div>
+      </div>
+
+      <figure class="g-program-card" data-reveal>
+        <div class="g-program-stack">
+          <img src="assets/images/first_page_of_g1_program.png" alt="Group G1 program first page" loading="lazy">
+          <img src="assets/images/second_page_of_g1_program.png" alt="Group G1 program second page" loading="lazy">
+        </div>
+        <figcaption>Program pages 1 and 2 for Group G1 itinerary details.</figcaption>
+      </figure>
+    </section>
+
+    <section class="g-stats" data-reveal>
+      <article class="g-stat">
+        <strong>16</strong>
+        <span>Travel Days</span>
+      </article>
+      <article class="g-stat">
+        <strong>03</strong>
+        <span>Main Stops</span>
+      </article>
+      <article class="g-stat">
+        <strong>City + Coast</strong>
+        <span>Balanced Pace</span>
+      </article>
+      <article class="g-stat">
+        <strong>Small Group</strong>
+        <span>Premium Feel</span>
+      </article>
+    </section>
+
+    <section class="g-section" id="hotels">
+      <header class="g-section-head" data-reveal>
+        <p class="g-section-kicker">Accommodation</p>
+        <h2 class="g-section-title">Selected Hotels</h2>
+        <p class="g-section-desc">
+          Handpicked stays chosen for atmosphere, comfort, and location quality throughout the journey.
+        </p>
+      </header>
+
+      <div class="g-hotel-grid">
+        <article class="g-hotel-card" data-reveal>
+          <figure>
+            <img src="assets/images/rey-hanoi-hotel.jpg" alt="Rey Hanoi Hotel" loading="lazy">
+          </figure>
+          <div class="g-hotel-body">
+            <p class="g-hotel-area">Hanoi</p>
+            <h3 class="g-hotel-name">Rey Hanoi Hotel</h3>
+            <p class="g-hotel-text">A charming hotel in the heart of Hanoi's old quarter, offering authentic ambiance and local atmosphere.</p>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="g-btn g-hotel-link">View Hotel</a>
+          </div>
+        </article>
+
+        <article class="g-hotel-card" data-reveal>
+          <figure>
+            <img src="assets/images/balcona-danang.jpg" alt="Balcona Da Nang Hotel" loading="lazy">
+          </figure>
+          <div class="g-hotel-body">
+            <p class="g-hotel-area">Da Nang</p>
+            <h3 class="g-hotel-name">Balcona Da Nang</h3>
+            <p class="g-hotel-text">Modern beachfront comfort with coastal views and convenient access to cultural and natural attractions.</p>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="g-btn g-hotel-link">View Hotel</a>
+          </div>
+        </article>
+
+        <article class="g-hotel-card" data-reveal>
+          <figure>
+            <img src="assets/images/grand-mercure-bangkok.jpg" alt="Grand Mercure Bangkok Atrium" loading="lazy">
+          </figure>
+          <div class="g-hotel-body">
+            <p class="g-hotel-area">Bangkok</p>
+            <h3 class="g-hotel-name">Grand Mercure Bangkok Atrium</h3>
+            <p class="g-hotel-text">Sophisticated urban retreat with easy access to temples, markets, and Bangkok's vibrant night scene.</p>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="g-btn g-hotel-link">View Hotel</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="g-section g-cta" id="booking" data-reveal>
+      <p class="g-section-kicker">Booking</p>
+      <h2 class="g-section-title">Ready To Join Group G1?</h2>
+      <p class="g-section-desc">
+        Contact our travel desk to confirm availability, receive payment guidance, and reserve your seat.
+      </p>
+      <div class="g-btn-row">
+        <a href="index.html#contact" class="g-btn g-btn-primary">Contact To Book</a>
+        <a href="mailto:Hamzatourasie@gmail.com" class="g-btn g-btn-ghost">Email Travel Desk</a>
+      </div>
+    </section>
+
+    <p class="g-footer">Asia This Way | Group G1 Hanoi - Da Nang - Bangkok | 2026 Departure</p>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1993,6 +1993,20 @@ main {
   overflow: hidden;
 }
 
+.card-banner-coming {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.86);
+  background: linear-gradient(135deg, hsla(262, 38%, 22%, 0.88), hsla(270, 44%, 18%, 0.9));
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: var(--fw-700);
+}
+
 .package-card .card-banner img {
   transition: transform var(--transition-slow), filter var(--transition-slow);
 }
