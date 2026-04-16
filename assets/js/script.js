@@ -602,14 +602,34 @@ toggleExpandableItems("viewAllBtn", ".extra-package", {
   expanded: "Show Fewer Departures"
 });
 
+const optimizeImageLoading = function () {
+  const allImages = document.querySelectorAll("img");
+
+  allImages.forEach(function (img, index) {
+    if (!img.hasAttribute("decoding")) {
+      img.setAttribute("decoding", "async");
+    }
+
+    if (!img.hasAttribute("loading") && index > 1) {
+      img.setAttribute("loading", "lazy");
+    }
+
+    if (!img.hasAttribute("fetchpriority")) {
+      const isHeroImage = Boolean(img.closest(".hero, .g-hero, .g0-hero"));
+      img.setAttribute("fetchpriority", isHeroImage ? "high" : "auto");
+    }
+  });
+};
+
 /**
  * reveal on scroll + optional lightbox
  */
 
 document.addEventListener("DOMContentLoaded", function () {
   refreshExpandableButtonLabels();
+  optimizeImageLoading();
 
-  const revealElements = document.querySelectorAll("[data-reveal]");
+  const revealElements = Array.from(document.querySelectorAll("[data-reveal]"));
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (revealElements.length) {
@@ -630,7 +650,9 @@ document.addEventListener("DOMContentLoaded", function () {
         rootMargin: "0px 0px -40px 0px"
       });
 
-      revealElements.forEach(function (element) {
+      revealElements.forEach(function (element, index) {
+        const delay = Math.min((index % 8) * 70, 420);
+        element.style.setProperty("--reveal-delay", delay + "ms");
         revealObserver.observe(element);
       });
     }

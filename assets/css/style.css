@@ -1510,15 +1510,32 @@ main {
 
 [data-reveal] {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(28px) scale(0.985);
+  filter: blur(1px);
   transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
+    opacity 0.72s ease,
+    transform 0.72s cubic-bezier(0.2, 0.78, 0.2, 1),
+    filter 0.72s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
 }
 
 [data-reveal].revealed {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
+}
+
+.popular,
+.package,
+.gallery,
+.cta {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 720px;
+}
+
+img[loading="lazy"] {
+  contain-intrinsic-size: 480px 320px;
 }
 
 .header-top,
@@ -2425,10 +2442,11 @@ address {
   }
 
   .section-text {
-    max-width: 34ch;
+    max-width: 36ch;
     margin-bottom: 20px;
-    font-size: 0.86rem;
-    line-height: 1.58;
+    font-size: 0.9rem;
+    line-height: 1.68;
+    letter-spacing: 0.01em;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     line-clamp: 3;
@@ -2535,12 +2553,12 @@ address {
 
   .hero-text {
     margin-bottom: 18px;
-    font-size: 0.88rem;
-    line-height: 1.65;
+    font-size: 0.91rem;
+    line-height: 1.72;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
     overflow: hidden;
   }
 
